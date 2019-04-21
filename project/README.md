@@ -9,10 +9,10 @@ The goal of this project was to take the dataset located [here](https://d396qusz
 3. A code book that describes the variables, the data, and any transformations or work that you performed to clean up the data called CodeBook.md. You should also include a README.md in the repo with your scripts. This repo explains how all of the scripts work and how they are connected.
 4. Analysis R Script
 
-### File descriptions
+### File Content
 - run_analysis.R
-  - Contains all of the code for loading, merging, and transforming.
+  - Code for **loading, merging & transforming.**
 - README.md
-  - Information regarding the project and each file.
+  - Information about the project
 - CodeBook.md
-  -  Describes the variables, the data, and any transformations or work that was performed to clean up the data.
+  -  Describes the **variables,** the **data,** and any **transformations** that was performed to clean-up the data
