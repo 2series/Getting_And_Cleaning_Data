@@ -1,4 +1,4 @@
-## Getting and Cleaning Data Course Project
+<img src="./image_gallery/tio.png"/>
 
 ### About this Project
 The goal of this project was to take the dataset located [here](https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip), from this [source](http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones) and perform a series of abstractions and transformations in order to collect and clean up the dataset for later analysis.
