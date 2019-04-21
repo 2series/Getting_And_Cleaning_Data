@@ -1,6 +1,6 @@
 CodeBook.md
 
-describes the variables, the data, and any transformations or work that you performed to clean up the data
+Describes the variables, the data, and any transformations performed to clean-up the data.
 
 ### Data Location and Files
 The data is scattered across multiple files and only a subset of all the files from [here](https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip) are used.
@@ -18,15 +18,15 @@ activities_path <- "./UCI HAR Dataset/activity_labels.txt"
 ```
 
 ### Cleaning the Data
-The idea here was to combine all of the information from the following files into a descriptive clean dataset. First all of the files are loaded into Tibbles, which are a special form of data frames from the 'Tibble' package. The features.txt file is used for naming all of the variables in the training and test sets. The features came with numbers in the front which were removed so that just the name of each variable could be used.
+The idea here was to combine all of the information from the following files into a descriptive clean dataset. Firstly, all of the files are loaded into Tibbles, which are a special form of dataframes from the 'Tibble' package. The features.txt file is used for naming all of the variables in the training and test sets. The features came with numbers in the front which were removed so that just the name of each variable could be used.
 
-Next the  test set and training set are merged together placing one on top of the other. Following the merge the subject id as well as the activity that describes the observation were added as new variable columns at the beginning of our new big dataset.
+Then, training set and test set are merged together placing one on top of the other. Following the merge the subject id as well as the activity that describes the observations were added as new variable columns at the beginning of our new dataset.
 
 ### Extraction of Mean and Standard Deviation
 The grep command is used to filter out all of the commands that are not the variables relating to the mean or standard deviation of the feature.
 
 ### Replace Activity Numbers With Descriptive Names
-The activity data is given as a numbers. The final Tidy dataset takes the numbers and converts them to the descriptive activity name given by 'activity_labels.txt'
+The activity data is given as a numbers. The final tidy dataset takes the numbers and converts them to the descriptive activity name given by 'activity_labels.txt'
 
 ### Create a Sub Table of All the Averages for Each activity and Each Subject
 A smaller table is created using the average of all of the observations using the group_by function from the `dplyr` package.
